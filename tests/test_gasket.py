@@ -1,6 +1,6 @@
 import pytest
 
-from hwdesign.mcad.gasket import gasket_cord, gasket_tpu, lindley, shore_to_E
+from gehaeuse.gasket import gasket_cord, gasket_tpu, lindley, shore_to_E
 
 
 def test_shore_to_modulus_is_plausible_and_monotonic():

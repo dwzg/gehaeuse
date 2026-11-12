@@ -1,0 +1,15 @@
+{
+  "name": "gehaeuse",
+  "description": "3D-printed enclosures as code, from Dennis Witzig's own hardware projects.",
+  "owner": {
+    "name": "Dennis Witzig",
+    "url": "https://github.com/dwzg"
+  },
+  "plugins": [
+    {
+      "name": "gehaeuse",
+      "source": "./",
+      "description": "Housings in build123d driven by a board's geometry, with measured checks: fit, clamping, gasket squeeze, overhangs, mass and print time."
+    }
+  ]
+}

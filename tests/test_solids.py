@@ -4,8 +4,8 @@ import pytest
 build123d = pytest.importorskip("build123d")
 from build123d import Align, Box, Pos  # noqa: E402
 
-from hwdesign.mcad.printing import mass_time, overhangs  # noqa: E402
-from hwdesign.mcad.probe import edge_along, inside  # noqa: E402
+from gehaeuse.printing import mass_time, overhangs  # noqa: E402
+from gehaeuse.probe import edge_along, inside  # noqa: E402
 
 BASE = (Align.CENTER, Align.CENTER, Align.MIN)
 

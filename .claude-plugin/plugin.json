@@ -1,0 +1,18 @@
+{
+  "name": "gehaeuse",
+  "version": "0.1.0",
+  "description": "3D-printed enclosures for circuit boards as code: housings in build123d driven by the board's geometry, with measured checks (fit, clamping, gasket squeeze, overhangs, mass and print time).",
+  "author": {
+    "name": "Dennis Witzig",
+    "url": "https://github.com/dwzg"
+  },
+  "repository": "https://github.com/dwzg/gehaeuse",
+  "license": "MIT",
+  "keywords": [
+    "build123d",
+    "enclosure",
+    "3d-printing",
+    "mcad",
+    "gasket"
+  ]
+}

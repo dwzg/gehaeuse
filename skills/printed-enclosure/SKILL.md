@@ -10,7 +10,8 @@ rebuild the housing and run its checks in the same step.
 
 ## Inputs from the board
 
-`hwdesign.kicad.geometry.export(pcb, json_path, extra={...})` writes `board.json`. Export the
+`leiterbahn.kicad.geometry.export(pcb, json_path, extra={...})` writes `board.json`
+([leiterbahn](https://github.com/dwzg/leiterbahn), the board side of this workflow). Export the
 STEP alongside it with `kicad-cli pcb export step --subst-models`. The JSON has, in mm from the
 outline's top-left corner:
 - the board size and thickness;
@@ -29,8 +30,8 @@ also feeds the interference checks and renders.
 - **Snap every critical height to the layer grid** (0.2 mm). A ledge at 2.3 mm prints at
   2.2 or 2.4, and the board then rattles or binds.
 - `check.py`: a table of `name, PASS/FAIL, measured, required`, measured on the generated
-  solids, not on the parameters. Exit 1 on any failure. `hwdesign.mcad` provides the
-  measuring:
+  solids, not on the parameters. Exit 1 on any failure. `gehaeuse` provides the
+  measuring ([api.md](api.md) lists every function):
 
 | Module | Tools | Use for |
 |---|---|---|
@@ -39,8 +40,8 @@ also feeds the interference checks and renders.
 | `printing` | `overhangs`, `mass_time` | print orientation, grams, hours |
 | `render` | `write_obj`, `f3d` | headless renders for review (needs `f3d`) |
 
-Install: `pip install "hwdesign[mcad]"`, or the submodule plus a venv with build123d, numpy
-and scipy.
+Install: `pip install -e path/to/gehaeuse`, or the repository as a submodule plus a venv with
+build123d, numpy and scipy.
 
 ## Rules learned
 
